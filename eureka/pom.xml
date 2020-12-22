@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>eureka-registry</module>
+        <module>eureka-provider</module>
     </modules>
 
     <parent>
