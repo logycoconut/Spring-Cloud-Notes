@@ -1,4 +1,11 @@
 spring:
   application:
     name: eureka-registry
-
+server:
+  port: 10010
+eureka:
+  client:
+    register-with-eureka: true  # 不将自己注册到注册中心
+    fetch-registry: false  # 不从eureka获取注册信息
+    service-url:
+      defaultZone: http://localhost:10010/eureka/  # 注册中心的访问地址
