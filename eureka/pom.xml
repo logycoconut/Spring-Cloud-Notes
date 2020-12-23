@@ -7,6 +7,7 @@
     <modules>
         <module>eureka-registry</module>
         <module>eureka-provider</module>
+        <module>eureka-consumer</module>
     </modules>
 
     <parent>
