@@ -20,7 +20,7 @@ public class EurekaConsumerApplication {
     }
 
     /**
-     * 启用负载均衡
+     * 启用负载均衡, 使得 RestTemplate 可以直接通过服务名找到对应的IP地址
      */
     @LoadBalanced
     @Bean
