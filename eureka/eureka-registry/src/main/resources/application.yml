@@ -9,3 +9,34 @@ eureka:
     fetch-registry: false  # 不从eureka获取注册信息
     service-url:
       defaultZone: http://localhost:10010/eureka/  # 注册中心的访问地址
+
+
+# 以下配置适用于实现高可用 Eureka 服务
+
+#spring:
+#  profiles: eureka-registry1
+#  application:
+#    name: eureka-registry1
+#server:
+#  port: 10010
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://localhost:10009/eureka  # 注册到 eureka-registry2 上
+#
+#---
+#
+#spring:
+#  profiles: eureka-registry2
+#  application:
+#    name: eureka-registry2
+#server:
+#  port: 10009
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://localhost:10010/eureka
