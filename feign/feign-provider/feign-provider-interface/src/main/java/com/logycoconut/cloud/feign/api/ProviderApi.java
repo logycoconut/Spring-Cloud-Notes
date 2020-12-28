@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author hall
  * @date 2020/12/28
  */
-@RequestMapping("user")
+//@RequestMapping("user")
 public interface ProviderApi {
 
     /**
