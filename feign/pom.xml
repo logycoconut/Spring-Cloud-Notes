@@ -9,11 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.logycoconut.cloud.feign</groupId>
     <artifactId>feign</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>feign-consumer</module>
         <module>feign-registry</module>
+        <module>feign-provider</module>
     </modules>
 
 
