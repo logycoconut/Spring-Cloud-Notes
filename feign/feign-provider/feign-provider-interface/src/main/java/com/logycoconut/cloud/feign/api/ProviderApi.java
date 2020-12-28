@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2020/12/28
  */
 @RequestMapping("user")
-public interface UserApi {
+public interface ProviderApi {
 
     /**
      * 提供服务模拟
