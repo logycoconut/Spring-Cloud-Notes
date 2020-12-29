@@ -17,6 +17,7 @@
     <modules>
         <module>eureka</module>
         <module>feign</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
