@@ -1,0 +1,4 @@
+user:
+  username: zhangsan
+server:
+  port: 8989
