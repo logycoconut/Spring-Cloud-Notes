@@ -1,12 +1,28 @@
+# 以下用于读取Git仓库配置文件
 server:
-  port: 8769
+  port: 10013
 spring:
   application:
     name: config-server
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/shared
+        git:
+          uri: https://gitee.com/logycoconut/config-example
+
+
+
+
+# 以下用于读取本地配置文件
+#server:
+#  port: 10013
+#spring:
+#  application:
+#    name: config-server
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/shared

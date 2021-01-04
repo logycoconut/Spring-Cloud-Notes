@@ -3,7 +3,6 @@ spring:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:8769
-      fail-fast: true # 读取没有成功，执行快速失败
+      uri: http://localhost:10013
   profiles:
     active: dev
