@@ -5,7 +5,7 @@ spring:
 #  cloud:
 #    config:
 #      uri: http://localhost:10013
-# 未接入 Eureka 时的方式
+# 接入 Eureka 时的方式
   cloud:
     config:
       discovery:
