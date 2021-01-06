@@ -9,8 +9,10 @@ spring:
       server:
         git:
           uri: https://gitee.com/logycoconut/config-example
-
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/
 
 
 # 以下用于读取本地配置文件

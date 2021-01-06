@@ -1,8 +1,32 @@
 spring:
   application:
     name: config-client
+# 未接入 Eureka 时的方式
+#  cloud:
+#    config:
+#      uri: http://localhost:10013
+# 未接入 Eureka 时的方式
   cloud:
     config:
-      uri: http://localhost:10013
+      discovery:
+        enabled: true  # 开启Config服务发现支持
+        service-id: config-server  # 配置中心服务器的服务名
   profiles:
     active: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoint:
+    shutdown:
+      enabled: true  # 开启这个之后，我们向 /actuator/shutdown 发送 POST 请求可以优雅的关闭应用
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # 需要开启的端点，* 表示开启所有端口，这里主要用到的是 refresh 这个端点，我们可以访问 /actuator 查看开启的节点
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/
