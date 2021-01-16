@@ -1,0 +1,20 @@
+server:
+  port: 10011
+spring:
+  application:
+    name: stream-producer
+  rabbitmq:  # 我们的 rabbitMQ 配置
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  cloud:
+    stream:
+      bindings:
+        output:  # 该属性的值就是 org.springframework.cloud.stream.messaging.Source 中的 @Output("output") 注解的 value 值
+          destination: steam.message  # 绑定的交换机名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/

@@ -19,6 +19,7 @@
         <module>feign</module>
         <module>gateway</module>
         <module>config</module>
+        <module>stream</module>
     </modules>
 
     <properties>
