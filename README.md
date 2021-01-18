@@ -24,11 +24,11 @@ Spring Cloud Netflix目前来说应该还是最流行的，但是随着Spring Cl
 
 ## 文章列表
 
-- [x] [Spring Cloud 之 Eureka实现服务注册和发现](/2020/023_spring_cloud_notes_eureka/)
-- [x] [Spring Cloud 之 OpenFeign的使用](/2020/024_spring_cloud_notes_feign/)
-- [x] [Spring Cloud 之 熔断器Hystrix](/2020/025_spring_cloud_notes_hystrix/)
-- [x] [Spring Cloud 之 微服务网关Gateway](/2020/026_spring_cloud_notes_gateway/)
-- [x] [Spring Cloud 之 分布式配置中心Spring Cloud Config](/2020/027_spring_cloud_notes_config/)
-- [x] [Spring Cloud 之 Spring Cloud Stream](/2021/028_spring_cloud_notes_stream/)
+- [x] [Spring Cloud 之 Eureka实现服务注册和发现](https://logycoco.xyz/2020/023_spring_cloud_notes_eureka/)
+- [x] [Spring Cloud 之 OpenFeign的使用](https://logycoco.xyz/2020/024_spring_cloud_notes_feign/)
+- [x] [Spring Cloud 之 熔断器Hystrix](https://logycoco.xyz/2020/025_spring_cloud_notes_hystrix/)
+- [x] [Spring Cloud 之 微服务网关Gateway](https://logycoco.xyz/2020/026_spring_cloud_notes_gateway/)
+- [x] [Spring Cloud 之 分布式配置中心Spring Cloud Config](https://logycoco.xyz/2020/027_spring_cloud_notes_config/)
+- [x] [Spring Cloud 之 Spring Cloud Stream](https://logycoco.xyz/2021/028_spring_cloud_notes_stream/)
 - [ ] Spring Cloud 之 服务认证授权 Spring Cloud OAuth 2.0
 - [ ] 待添加...
