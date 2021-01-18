@@ -2,19 +2,34 @@ server:
   port: 10012
 spring:
   application:
-    name: stream-producer
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    virtual-host: /
+    name: stream-consumer
   cloud:
     stream:
       bindings:
         input:
-          destination: steam.message
-
+          destination: stream.message
+          binder: remote_rabbit
+        my_input:
+          destination: stream.my_input_message
+          binder: remote_rabbit
+          group: my_group
+        log_input:
+          destination: stream.log_message
+          binder: remote_rabbit
+        log_output:
+          destination: stream.log_message
+          binder: remote_rabbit
+      binders:
+        remote_rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+                virtual-host: /
 eureka:
   client:
     service-url:

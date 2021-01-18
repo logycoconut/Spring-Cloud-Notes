@@ -13,7 +13,7 @@ spring:
     stream:
       bindings:
         output:  # 该属性的值就是 org.springframework.cloud.stream.messaging.Source 中的 @Output("output") 注解的 value 值
-          destination: steam.message  # 绑定的交换机名称
+          destination: stream.message  # 绑定的交换机名称
 eureka:
   client:
     service-url:
